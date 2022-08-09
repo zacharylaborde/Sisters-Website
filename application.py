@@ -29,6 +29,21 @@ service_list = [
     }
 ]
 
+faqs = [
+    {
+        'question': 'Question 1?',
+        'answer': 'Answer to question 1.'
+    },
+    {
+        'question': 'Question 2?',
+        'answer': 'Answer to question 2.'
+    },
+    {
+        'question': 'Question 3?',
+        'answer': 'Answer to question 3.'
+    },
+]
+
 
 @application.route('/')
 @application.route('/home')
@@ -53,7 +68,7 @@ def contact():
 @application.route('/faq')
 def faq():
     """ Sample function docstring """
-    return render_template("faq.html")
+    return render_template("faq.html", faqs=faqs)
 
 
 if __name__ == '__main__':

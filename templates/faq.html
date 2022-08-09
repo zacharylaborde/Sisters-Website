@@ -1,5 +1,9 @@
 {% extends "layout.html" %}
 {% block content %}
     <h1>FAQ</h1>
+    {% for faq in faqs %}
+        <h2>Q: {{ faq.question }}</h2>
+        <h3>A: {{ faq.answer }}</h3>
+    {% endfor %}
     {% include "schedule.html" %}
 {% endblock %}
