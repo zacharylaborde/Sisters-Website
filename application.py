@@ -14,19 +14,19 @@ def home():
 @application.route('/services')
 def services():
     """ Sample function docstring """
-    return "<h1>Services</h1>"
+    return render_template("services.html")
 
 
 @application.route('/contact')
 def contact():
     """ Sample function docstring """
-    return "<h1>Contact Me</h1>"
+    return render_template("contact.html")
 
 
 @application.route('/faq')
 def faq():
     """ Sample function docstring """
-    return "<h1>FAQ</h1>"
+    return render_template("faq.html")
 
 
 if __name__ == '__main__':
