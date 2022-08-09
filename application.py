@@ -10,7 +10,7 @@ service_list = [
     {
         'name': 'Complimentary Consultation (Required for Balayage, Fantasy Colors, '
                 'Color Correction, Ect.)',
-        'price': 'FREE',
+        'price': 'COMPLIMENTARY',
         'duration': '15m'
     },
     {
