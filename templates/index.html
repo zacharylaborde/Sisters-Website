@@ -2,7 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>{% block title %}Hair - By Anastasia{% endblock %}</title>
+    {% if title %}
+        <title>Hair - {{ title }}</title>
+    {% else %}
+        <title>Hair - By Anastasia</title>
+    {% endif %}
 </head>
 <body>
 {% include "nav-bar.html" %}
