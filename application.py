@@ -13,6 +13,16 @@ service_list = [
         'name': 'Service 2',
         'price': '$$$',
         'duration': 'xHr & xxMin'
+    },
+    {
+        'name': 'Service 3',
+        'price': '$$$',
+        'duration': 'xHr & xxMin'
+    },
+    {
+        'name': 'Service 4',
+        'price': '$$$',
+        'duration': 'xHr & xxMin'
     }
 ]
 
