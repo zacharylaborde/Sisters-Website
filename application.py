@@ -3,6 +3,19 @@ from flask import Flask, render_template
 
 application = Flask(__name__)
 
+service_list = [
+    {
+        'name': 'Service 1',
+        'price': '$$$',
+        'duration': 'xHr & xxMin'
+    },
+    {
+        'name': 'Service 2',
+        'price': '$$$',
+        'duration': 'xHr & xxMin'
+    }
+]
+
 
 @application.route('/')
 @application.route('/home')
@@ -14,7 +27,7 @@ def home():
 @application.route('/services')
 def services():
     """ Sample function docstring """
-    return render_template("services.html")
+    return render_template("services.html", services=service_list)
 
 
 @application.route('/contact')

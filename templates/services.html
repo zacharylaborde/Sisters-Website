@@ -1,4 +1,11 @@
 {% extends "layout.html" %}
 {% block content %}
     <h1>Welcome to the Services Page!</h1>
-{% endblock %}
+
+    {% for service in services %}
+        <h2>{{ service.name }}</h2>
+        <h4>Price: {{ service.price }}</h4>
+        <h4>Duration: {{ service.duration }}</h4>
+    {% endfor %}
+
+{% endblock content %}
