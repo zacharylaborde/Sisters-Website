@@ -1,7 +1,10 @@
 """ Sample module docstring """
 from flask import Flask, render_template
+from forms import SendEmail
 
 application = Flask(__name__)
+
+application.config['SECRET_KEY'] = '19k1u25gggre1d8iwIUDddfa1'
 
 service_list = [
     {
@@ -43,7 +46,8 @@ def services():
 @application.route('/contact')
 def contact():
     """ Sample function docstring """
-    return render_template("contact.html")
+    form = SendEmail()
+    return render_template("contact.html", form=form)
 
 
 @application.route('/faq')

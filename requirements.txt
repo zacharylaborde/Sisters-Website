@@ -1,2 +1,5 @@
 pylint
-flask==2.2.2
+flask
+flask-wtf
+WTForms
+email_validator
