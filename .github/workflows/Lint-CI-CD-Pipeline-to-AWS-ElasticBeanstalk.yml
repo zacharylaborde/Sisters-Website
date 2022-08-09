@@ -9,9 +9,9 @@
 
 name: CI-CD-Pipeline-to-AWS-ElasticBeanstalk
 env:
-  EB_PACKAGE_S3_BUCKET_NAME : "vtsystem-app"
-  EB_APPLICATION_NAME       : "VTSystem"
-  EB_ENVIRONMENT_NAME       : "VTSystem-env"
+  EB_PACKAGE_S3_BUCKET_NAME : "sisterswebsite-app"
+  EB_APPLICATION_NAME       : "Sisters-Website"
+  EB_ENVIRONMENT_NAME       : "Sisterswebsite-env"
   DEPLOY_PACKAGE_NAME       : "flask-app-${{ github.sha }}.zip"
   AWS_REGION_NAME           : "us-east-1"
 
