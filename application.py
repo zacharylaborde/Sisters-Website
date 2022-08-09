@@ -107,16 +107,17 @@ service_list = [
 
 faqs = [
     {
-        'question': 'Question 1?',
-        'answer': 'Answer to question 1.'
+        'question': 'What color lines do you use?',
+        'answer': 'I use Pravana Chromasilk Creme Color and Matrix Light Master.'
     },
     {
-        'question': 'Question 2?',
-        'answer': 'Answer to question 2.'
+        'question': 'What is your pricing for color?',
+        'answer': 'I do not price quote without a consultation. You can find my pricing under '
+                  '\'Services.\' Please note, all services are a la carte.. '
     },
     {
-        'question': 'Question 3?',
-        'answer': 'Answer to question 3.'
+        'question': 'What products do you offer?',
+        'answer': 'I sell Pravana, Olaplex and Keratin Complex.'
     },
 ]
 
